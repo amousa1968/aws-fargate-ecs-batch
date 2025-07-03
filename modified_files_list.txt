@@ -1,0 +1,13 @@
+terraform/aws-fargate-ecs-batch/modules/step1_ebs_s3_tls/main.tf
+terraform/aws-fargate-ecs-batch/modules/step2_networking/main.tf
+terraform/aws-fargate-ecs-batch/modules/step3_cloudtrail_image_scanning/main.tf
+terraform/aws-fargate-ecs-batch/modules/step4_inspector_guardduty/main.tf
+terraform/aws-fargate-ecs-batch/modules/step5_iam_roles/main.tf
+terraform/aws-fargate-ecs-batch/modules/step6_resource_policies/main.tf
+terraform/aws-fargate-ecs-batch/modules/step7_tls_encryption/main.tf
+terraform/aws-fargate-ecs-batch/modules/step8_cloudtrail_eventbridge/main.tf
+terraform/aws-fargate-ecs-batch/modules/step9_cloudwatch_alarms/main.tf
+terraform/aws-fargate-ecs-batch/modules/step10_private_subnets_nat/main.tf
+terraform/aws-fargate-ecs-batch/modules/step11_iam_roles_minimal/main.tf
+terraform/aws-fargate-ecs-batch/modules/step12_job_queue_compute_env/main.tf
+terraform/aws-fargate-ecs-batch/modules/step13_security_hub/main.tf

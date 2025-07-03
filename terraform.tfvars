@@ -1,0 +1,43 @@
+max_vcpus = 16
+subnets = ["subnet-0123456789abcdef0", "subnet-0fedcba9876543210"]
+security_group_ids = ["sg-0123456789abcdef0"]
+cloudtrail_s3_bucket = "my-cloudtrail-logs-bucket"
+cloudtrail_name = "my-cloudtrail"
+s3_bucket_name = "my-cloudtrail-logs-bucket"
+aws_region = "us-east-1"
+log_group_name = "my-log-group"
+container_image = "my-container-image:latest"
+batch_service_role_arn = "arn:aws:iam::123456789012:role/AWSBatchServiceRole"
+vpc_cidr = "10.0.0.0/16"
+private_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+availability_zones = ["us-east-1a", "us-east-1b"]
+allowed_ingress_cidrs = ["0.0.0.0/0"]
+iam_role_name = "my-batch-job-role"
+iam_policy_arns = ["arn:aws:iam::aws:policy/service-role/AWSBatchServiceRole"]
+policy_name = "my-policy"
+policy_document = "{}"
+load_balancer_arn = "arn:aws:elasticloadbalancing:us-east-1:123456789012:loadbalancer/app/my-load-balancer/50dc6c495c0c9188"
+target_group_arn = "arn:aws:elasticloadbalancing:us-east-1:123456789012:targetgroup/my-targets/73e2d6bc24d8a067"
+certificate_arn = "arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012"
+event_bus_name = "default"
+event_target_arn = "arn:aws:lambda:us-east-1:123456789012:function:ProcessBatchEvents"
+alarm_name = "BatchJobAlarm"
+metric_name = "FailedJobs"
+namespace = "AWS/Batch"
+threshold = 1
+comparison_operator = "GreaterThanOrEqualToThreshold"
+evaluation_periods = 1
+alarm_actions = ["arn:aws:sns:us-east-1:123456789012:NotifyMe"]
+vpc_id = "vpc-0123456789abcdef0"
+job_type = "my-job-type"
+iam_policy_document = "{}"
+job_queue_name = "my-job-queue"
+priority = 1
+compute_environment_order = [
+  {
+    order = 1
+    compute_environment_arn = "arn:aws:batch:us-east-1:123456789012:compute-environment/my-compute-environment"
+  }
+]
+state = "ENABLED"
+security_standards = ["AWS Foundational Security Best Practices"]
