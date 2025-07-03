@@ -471,6 +471,4 @@ Changes to Outputs:
 
 Note: You didn't use the -out option to save this plan, so Terraform can't
 guarantee to take exactly these actions if you run "terraform apply" now.
-
-amousa@amousa MINGW64 ~/Documents/Chef
 $
